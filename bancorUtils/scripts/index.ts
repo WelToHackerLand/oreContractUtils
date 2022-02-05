@@ -1,7 +1,7 @@
 import {ethers} from "hardhat";
 import {expect} from "chai";
 
-import {forkBlockNumber, unlockForkAddresses} from "./utilities";
+import { forkBlockNumber, unlockForkAddresses } from "./utilities";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import { Contract } from "ethers";
 import { Address } from "cluster";
@@ -67,6 +67,11 @@ const getAnchorPool = async(converterRegistry: Contract, token0Address: string, 
         signer
     );
     return anchor;
+}
+
+const getAllPools = async(converterRegistry: Contract): Promise<string[]> => {
+    const pools: string[] = await converterRegistry.getLiquidityPools();
+    return pools;
 }
 
 const getPool = async(anchor: Contract, signer: SignerWithAddress): Promise<Contract> => {
@@ -153,6 +158,11 @@ async function main() {
         await getBancorComponentAddress('BancorConverterRegistry', contractRegistry),
         developer
     );
+
+    //============================== GET ALL POOLS ==================================
+    // const pools: string[] = await getAllPools(converterRegistry);
+    // console.log(pools[0]);
+    // console.log(pools.length);
 
     //============================== SAMPLE EXCHANGE ==================================
     const usdcTokenAddress = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48';
