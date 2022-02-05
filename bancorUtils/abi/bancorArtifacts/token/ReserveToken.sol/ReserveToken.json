@@ -1,0 +1,24 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ReserveToken",
+  "sourceName": "contracts/token/ReserveToken.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "NATIVE_TOKEN_ADDRESS",
+      "outputs": [
+        {
+          "internalType": "contract IReserveToken",
+          "name": "",
+          "type": "IReserveToken"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x607f610024600b82828239805160001a607314601757fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c8063df2ebdbb146038575b600080fd5b603e605a565b604080516001600160a01b039092168252519081900360200190f35b73eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee8156fea164736f6c634300060c000a",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c8063df2ebdbb146038575b600080fd5b603e605a565b604080516001600160a01b039092168252519081900360200190f35b73eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee8156fea164736f6c634300060c000a",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

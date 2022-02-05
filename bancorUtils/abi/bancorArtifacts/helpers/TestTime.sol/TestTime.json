@@ -1,0 +1,37 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "TestTime",
+  "sourceName": "contracts/helpers/TestTime.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "currentTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "newCurrentTime",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTime",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052600160005534801561001557600080fd5b506083806100246000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80633beb26c4146037578063d18e81b3146053575b600080fd5b605160048036036020811015604b57600080fd5b5035606b565b005b60596070565b60408051918252519081900360200190f35b600055565b6000549056fea164736f6c634300060c000a",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80633beb26c4146037578063d18e81b3146053575b600080fd5b605160048036036020811015604b57600080fd5b5035606b565b005b60596070565b60408051918252519081900360200190f35b600055565b6000549056fea164736f6c634300060c000a",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
